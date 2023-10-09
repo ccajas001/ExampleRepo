@@ -21,4 +21,5 @@
     <string name="totalTxt3">25%:</string>
     <string name="totalTxt2">20%:</string>
     <string name="totalText">Totals:</string>
+    <string name="part_of_top_banner_ui">Part of top banner ui</string>
 </resources>
