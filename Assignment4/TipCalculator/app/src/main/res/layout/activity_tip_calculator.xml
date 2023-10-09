@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipCalculatorActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="469dp"
+        android:layout_height="127dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banner1"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/totalText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalTxt2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/gv4"
+        app:layout_constraintTop_toTopOf="@+id/gh5" />
+
+    <TextView
+        android:id="@+id/twentyfivePercentTotalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalValue25_Txt"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/gv7"
+        app:layout_constraintStart_toStartOf="@+id/gv6"
+        app:layout_constraintTop_toTopOf="@+id/gh5" />
+
+    <TextView
+        android:id="@+id/twentyPercentTotalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalValue20_Txt"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/gv5"
+        app:layout_constraintStart_toStartOf="@+id/gv4"
+        app:layout_constraintTop_toTopOf="@+id/gh5" />
+
+    <TextView
+        android:id="@+id/twentyPercentTipValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipValue20_Txt"
+        app:layout_constraintBottom_toTopOf="@+id/gh5"
+        app:layout_constraintEnd_toStartOf="@+id/gv5"
+        app:layout_constraintStart_toStartOf="@+id/gv4"
+        app:layout_constraintTop_toTopOf="@+id/gh4" />
+
+    <EditText
+        android:id="@+id/partySizeValue"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="@string/partySizeValue"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toTopOf="@+id/gh3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gv1"
+        app:layout_constraintTop_toTopOf="@+id/gh2"
+        tools:ignore="LabelFor,TextFields" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="346dp"
+        app:layout_constraintGuide_percent=".8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gh1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gh2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gh3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gh4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gh5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".65" />
+
+    <TextView
+        android:id="@+id/chkAmtTxt"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="@string/check_amount"
+        app:layout_constraintBottom_toTopOf="@+id/gh2"
+        app:layout_constraintEnd_toStartOf="@+id/gv1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gh1"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/partySizeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/party_size"
+        app:layout_constraintBottom_toTopOf="@+id/gh3"
+        app:layout_constraintEnd_toStartOf="@+id/gv1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gh2" />
+
+    <EditText
+        android:id="@+id/checkAmountValue"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="@string/checkAmountValue"
+        android:inputType="text"
+
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toTopOf="@+id/gh2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gv1"
+        app:layout_constraintTop_toTopOf="@+id/gh1"
+        tools:ignore="Autofill,LabelFor" />
+
+    <Button
+        android:id="@+id/buttonCompute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/compute_tip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gh3" />
+
+    <TextView
+        android:id="@+id/fifteenPercentTipValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipValue15_Txt"
+        app:layout_constraintBottom_toTopOf="@+id/gh5"
+        app:layout_constraintEnd_toStartOf="@+id/gv3"
+        app:layout_constraintStart_toStartOf="@+id/gv1"
+        app:layout_constraintTop_toTopOf="@+id/gh4" />
+
+    <TextView
+        android:id="@+id/twentyfivePercentTipValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipValue25_Txt"
+        app:layout_constraintBottom_toTopOf="@+id/gh5"
+        app:layout_constraintEnd_toStartOf="@+id/gv7"
+        app:layout_constraintStart_toStartOf="@+id/gv6"
+        app:layout_constraintTop_toTopOf="@+id/gh4" />
+
+    <TextView
+        android:id="@+id/fifteenPercentTotalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalValue15_Txt"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/gv3"
+        app:layout_constraintStart_toStartOf="@+id/gv1"
+        app:layout_constraintTop_toTopOf="@+id/gh5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".75" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TitleText"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/gh6"
+        app:layout_constraintEnd_toStartOf="@+id/gv5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tipTotal_Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tips_and_totals_per_person_txt"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/gh4"
+        app:layout_constraintEnd_toStartOf="@+id/gv4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCompute" />
+
+    <TextView
+        android:id="@+id/tipTxtAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipsTxt"
+        app:layout_constraintBottom_toTopOf="@+id/gh5"
+        app:layout_constraintEnd_toStartOf="@+id/gv2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gh4" />
+
+    <TextView
+        android:id="@+id/totalTxtAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalText"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/gv2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gh5" />
+
+    <TextView
+        android:id="@+id/tipText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipTxt1"
+        app:layout_constraintBottom_toTopOf="@+id/gh5"
+        app:layout_constraintEnd_toStartOf="@+id/gv1"
+        app:layout_constraintTop_toTopOf="@+id/gh4" />
+
+    <TextView
+        android:id="@+id/totalText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalTxt3"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/gv6"
+        app:layout_constraintTop_toTopOf="@+id/gh5" />
+
+    <TextView
+        android:id="@+id/tipText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipTxt3"
+        app:layout_constraintBottom_toTopOf="@+id/gh5"
+        app:layout_constraintEnd_toStartOf="@+id/gv6"
+        app:layout_constraintTop_toTopOf="@+id/gh4" />
+
+    <TextView
+        android:id="@+id/tipText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipTxt2"
+        app:layout_constraintBottom_toTopOf="@+id/gh5"
+        app:layout_constraintEnd_toStartOf="@+id/gv4"
+        app:layout_constraintTop_toTopOf="@+id/gh4" />
+
+    <TextView
+        android:id="@+id/totalText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalTxt1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/gv1"
+        app:layout_constraintTop_toTopOf="@+id/gh5" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="367dp"
+        app:layout_constraintGuide_percent=".95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gh6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
